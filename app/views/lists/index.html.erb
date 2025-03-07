@@ -1,0 +1,7 @@
+<h1>ta a dari</h1>
+
+<% @list.each do |list| %>
+  <h2><%= link_to list.name, list_path(list) %></h2>
+<% end %>
+
+<%= link_to "Create new list", new_list_path %>
